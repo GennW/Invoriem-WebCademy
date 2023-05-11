@@ -1,0 +1,138 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import './fonts/stylesheet.css';
+/* font-family: 'Work Sans', sans-serif; */
+/* font-family: 'Gilroy', sans-serif; */
+
+body {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+}
+.container {
+    max-width: 1750px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.btn {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #114455;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 800;
+    color: #114455;
+    padding: 10px 24px;
+    padding-right: 72px;
+    transition: color 0.18s ease-in, background-color 0.18s ease-in;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-image: url(./../img/header/arrowB.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.btn:active {
+    top: 1px;
+}
+.btn:hover {
+    background-color: #114455;
+    color: white;
+}
+.btn:hover::after {
+    background-image: url(./../img/header/arrowW.svg);
+}
+.btn--big {
+    padding: 14px 32px;
+    padding-right: 80px;
+}
+.btn--big:hover {
+    background-color: transparent;
+    border: 1px solid #114455;
+    color: #1F1F1F;
+}
+.btn--big:hover::after {
+    background-image: url(./../img/header/arrowB.svg);
+}
+.btn--dark {
+    color: white;
+    background-color: #114455;
+}
+.btn--dark::after {
+    background-image: url(./../img/header/arrowW.svg);
+
+}
+
+
+/* header */
+
+.header {
+    min-height: 100vh;
+    background-image: url(./../img/header/wallpaper.jpg);
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.header__top {
+    margin-bottom: 126px;
+    padding: 44px 0;
+    
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    column-gap: 118px;
+}
+
+.link {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 800;
+    color: #114455;
+}
+.link:hover {
+    color: #296e85;
+}
+
+
+.header__content {
+    max-width: 1060px;
+}
+.header__title {
+    max-width: 734px;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 94px;
+    color: #114455;
+    margin-bottom: 48px;
+}
+.header__text {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    color: #1F1F1F;
+    opacity: 0.7;
+    margin-bottom: 72px;
+}
+/* .header__arrows {
+    display: flex;
+    justify-content: center;
+    margin-top: 427px;
+    
+} */
+
+
